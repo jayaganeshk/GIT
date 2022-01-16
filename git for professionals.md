@@ -64,10 +64,10 @@ git rebase --abort
 
 ## Rebase
 
-Step1: Git removes all comits from branch A after the common commit.
-Step2: Git adds all commits from branch B after this both brances looks same.
-Step3: adds commits from branch A after this, "Rebased"
-Commit histroy is changed.
+- Step1: Git removes all comits from branch A after the common commit.
+- Step2: Git adds all commits from branch B after this both brances looks same.
+- Step3: adds commits from branch A after this, "Rebased"
+  Commit histroy is changed.
 
 ```
 git rebase -i <branch>

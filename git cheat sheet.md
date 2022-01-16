@@ -18,14 +18,6 @@ There is a large project and 100 developers are working on the project.
 - Any change made to the source code can be tracked by others.
 - There is regular communication between the developers.
 
-Therefore, for large projects that involve thousands of developers, Git helps those developers to work collaboratively and efficiently in a structured manner. [**Learn More**](https://www.interviewbit.com/git-interview-questions/).
-
-Crack your next tech interview with confidence!
-
-Take a free mock interview, get instant⚡️ feedback and recommendation💡
-
-[Take Free Mock Interview](https://www.interviewbit.com/event/free-mock-coding-interview?utm_source=ib&utm_medium=in-interview-guide&utm_campaign=MoCo&utm_content=/git-cheat-sheet/)
-
 ## Learn GIT: Basic to Advanced Concepts
 
 ### 1\. Uses of Git
@@ -55,17 +47,6 @@ In Git, the workflow is mainly divided into three areas -
 - **Working directory** - This is the area where you modify your existing files.
 - **Staging area (Index)** - In this, the files in your working directory are staged and snapshots are added.
 - **Git directory or repository** - It is basically where you perform all the changes that need to be made i.e. perform commits to branch, checkout branch, make changes etc.
-
-You can download a PDF version of Git Cheat Sheet.
-
-Download PDF [ Download PDF ](<javascript:void(0)>)
-
-### Download PDF
-
----
-
-Your requested download is ready!  
-Click here to download.
 
 ### 4\. Install Git: Installation in Windows/Linux/Mac OS X
 
@@ -567,3 +548,9 @@ The following table shows the most commonly used Git Commands:
 | 38    | git bisect                                    | Git bisect goes through all the previous commit and uses binary search to find the bugged commit.                                                |
 | 39    | git blame                                     | git blame is used to know who/which commit is responsible for the lastest changes in the repository.                                             |
 | 40    | git cherry-pick                               | Choosing a commit from one branch and applying it to another is known as cherry picking in Git.                                                  |
+
+## 21 AWS Merging pull requests
+
+| A fast-forward merge                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | squash merge                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | three-way merge                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| A fast-forward merge moves the reference for the destination branch forward to the most recent commit of the source branch. This is the default behavior of Git when possible. No merge commit is created, but all commit history from the source branch is retained as if it had occurred in the destination branch. Fast-forward merges do not appear as a branch merge in the commit visualizer view of the destination branch's history because no merge commit is created. The tip of the source branch is fast-forwarded to the tip of the destination branch. | A squash merge creates one commit that contains the changes in the source branch and applies that single squashed commit to the destination branch. By default, the commit message for that squash commit contains all the commit messages of the changes in the source branch. No individual commit history of the branch changes is retained. This can help simplify your repository history while still retaining a graphical representation of the merge in the commit visualizer view of the destination branch's history. | A three-way merge creates a merge commit for the merge in the destination branch, but also retains the individual commits made in the source branch as part of the history of the destination branch. This can help maintain a complete history of changes to your repository. |
